@@ -6,6 +6,21 @@ model, scaler = pickle.load(open("diabetes_model.pkl", "rb"))
 
 st.title("Diabetes Prediction App")
 
+
+st.subheader("📌 Reference Ranges")
+
+st.markdown("""
+- **Pregnancies:** 0 – 17  
+- **Glucose:** 70 – 180  
+- **Blood Pressure:** 60 – 120  
+- **Skin Thickness:** 10 – 50  
+- **Insulin:** 15 – 276  
+- **BMI:** 18.5 – 40  
+- **DPF:** 0.1 – 2.5  
+- **Age:** 21 – 60  
+""")
+
+
 preg = st.number_input("Pregnancies")
 glucose = st.number_input("Glucose")
 bp = st.number_input("Blood Pressure")
