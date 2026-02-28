@@ -7,7 +7,7 @@ model, scaler = pickle.load(open("diabetes_model.pkl", "rb"))
 st.title("Diabetes Prediction App")
 
 
-st.subheader("📌 Reference Ranges")
+st.subheader("Reference Ranges")
 
 st.markdown("""
 - **Pregnancies:** 0 – 17  
@@ -39,3 +39,4 @@ if st.button("Predict"):
         st.error("Diabetic")
     else:
         st.success("Non-Diabetic")
+
